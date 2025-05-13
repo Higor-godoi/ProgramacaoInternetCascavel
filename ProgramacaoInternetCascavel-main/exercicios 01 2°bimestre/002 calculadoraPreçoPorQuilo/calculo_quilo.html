@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Preço por Quilo</title>
+    <!-- <link rel="stylesheet" href="style_quilo.css"> Futuramente, se quisermos estilizar -->
+</head>
+<body>
+
+    <h1>Cálculo de Preço por Quilo</h1>
+
+    <div>
+        <label for="valorQuilo">Valor do Quilo (R$):</label>
+        <input type="number" id="valorQuilo" placeholder="Ex: 7.50" step="0.01">
+    </div>
+
+    <div>
+        <label for="quantidadeQuilos">Quantidade Consumida (kg):</label>
+        <input type="number" id="quantidadeQuilos" placeholder="Ex: 1.5" step="0.01">
+    </div>
+
+    <button id="calcularPrecoFinal">Calcular Valor Final</button>
+
+    <p id="resultadoPrecoFinal"></p>
+
+    <script src="script_quilo.js"></script>
+</body>
+</html> 
