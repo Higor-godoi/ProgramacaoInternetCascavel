@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 150px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #ff5722; /* Cor laranja avermelhado */
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        #resultado {
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            margin-top: 15px;
+            font-size: 1.1em;
+            min-height: 3.5em; /* Espaço para as 3 linhas de resultado */
+        }
+        #resultado p {
+            margin: 5px 0; /* Espaço entre os parágrafos de resultado */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora de Salário com Aumento e Imposto</h1>
+
+    <div>
+        <label for="salarioInicial">Salário Inicial (R$):</label>
+        <!-- Input para o salário inicial -->
+        <input type="number" id="salarioInicial" value="0" min="0" step="any">
+    </div>
+
+    <!-- Botão que chamará a função JavaScript -->
+    <button onclick="calcularSalarios()">Calcular Salários</button>
+
+    <div id="resultado">
+        <h2>Resultados:</h2>
+        <!-- Áreas para exibir os três resultados -->
+        <p>Salário Inicial: <strong id="salarioInicialOutput">R$ 0.00</strong></p>
+        <p>Salário com Aumento (15%): <strong id="salarioAumentoOutput">R$ 0.00</strong></p>
+        <p>Salário Final (desconto de 8%): <strong id="salarioFinalOutput">R$ 0.00</strong></p>
+    </div>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="exercicio11.js"></script>
+
+</body>
+</html>

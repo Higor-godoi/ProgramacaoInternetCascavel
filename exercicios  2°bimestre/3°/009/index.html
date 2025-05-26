@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distância entre Pontos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 100px; /* Inputs para as coordenadas */
+            margin-right: 10px; /* Espaço entre os inputs do mesmo ponto */
+        }
+         .point-inputs {
+             margin-bottom: 20px; /* Espaço entre os grupos de inputs dos pontos */
+         }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50; /* Cor verde */
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        #resultado {
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            min-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora de Distância entre Dois Pontos</h1>
+
+    <div class="point-inputs">
+        <h2>Ponto 1 (\(x_1, y_1\)):</h2>
+        <label for="x1">Coordenada X:</label>
+        <!-- Input para x1 -->
+        <input type="number" id="x1" value="0" step="any">
+
+        <label for="y1">Coordenada Y:</label>
+        <!-- Input para y1 -->
+        <input type="number" id="y1" value="0" step="any">
+    </div>
+
+    <div class="point-inputs">
+        <h2>Ponto 2 (\(x_2, y_2\)):</h2>
+        <label for="x2">Coordenada X:</label>
+        <!-- Input para x2 -->
+        <input type="number" id="x2" value="0" step="any">
+
+        <label for="y2">Coordenada Y:</label>
+        <!-- Input para y2 -->
+        <input type="number" id="y2" value="0" step="

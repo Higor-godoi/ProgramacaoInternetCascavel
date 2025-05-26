@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dias de Vida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 200px; /* Largura um pouco maior para o nome */
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #008CBA; /* Cor diferente para diferenciar */
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        #resultado {
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            margin-top: 15px;
+            font-size: 1.1em; /* Tamanho de fonte maior para o resultado */
+            min-height: 1.5em; /* Garante um espaço mínimo mesmo sem resultado */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora de Dias de Vida</h1>
+
+    <div>
+        <label for="nomePessoa">Nome:</label>
+        <!-- Input para o nome -->
+        <input type="text" id="nomePessoa">
+    </div>
+
+    <div>
+        <label for="idadePessoa">Idade (anos completos):</label>
+        <!-- Input para a idade. type="number" já ajuda com validação básica do navegador. -->
+        <input type="number" id="idadePessoa" value="0" min="0">
+    </div>
+
+    <!-- Botão que chamará a função JavaScript -->
+    <button onclick="calcularDiasDeVida()">Calcular Dias de Vida</button>
+
+    <div id="resultado">
+        <!-- O resultado será exibido aqui -->
+    </div>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="exercicio4.js"></script>
+
+</body>
+</html>

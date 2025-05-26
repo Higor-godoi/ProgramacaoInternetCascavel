@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora da Padaria Hotpão</title>
+    <style>
+        /* Seu CSS continua aqui dentro da tag style */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 100px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        #resultado {
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora de Vendas da Hotpão</h1>
+
+    <div>
+        <label for="quantidadePaes">Quantidade de Pães Franceses:</label>
+        <input type="number" id="quantidadePaes" value="0" min="0">
+    </div>
+
+    <div>
+        <label for="quantidadeBroas">Quantidade de Broas:</label>
+        <input type="number" id="quantidadeBroas" value="0" min="0">
+    </div>
+
+    <!-- O botão ainda chama a função calcularVendas(), que agora está no arquivo script.js -->
+    <button onclick="calcularVendas()">Calcular</button>
+
+    <div id="resultado">
+        <h2>Resultados:</h2>
+        <p>Total Arrecadado: <strong id="totalArrecadado">R$ 0.00</strong></p>
+        <p>Valor para Poupança (10%): <strong id="valorPoupanca">R$ 0.00</strong></p>
+    </div>
+
+    <!-- Linkamos o arquivo script.js aqui.
+         O atributo 'src' indica o caminho para o arquivo JavaScript.
+         Colocar o script aqui (antes do </body>) garante que todos os elementos HTML acima
+         já foram carregados antes que o script tente acessá-los com getElementById. -->
+    <script src="script.js"></script>
+
+</body>
+</html>

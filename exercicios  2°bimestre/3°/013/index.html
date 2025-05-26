@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Área da Pizza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 100px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #e91e63; /* Cor rosa */
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        #resultado {
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            min-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora de Área da Pizza</h1>
+
+    <div>
+        <label for="raio">Raio da pizza (R):</label>
+        <!-- Input para o raio, permitindo decimais -->
+        <input type="number" id="raio" value="0" min="0" step="any">
+    </div>
+
+    <!-- Botão que chamará a função JavaScript -->
+    <button onclick="calcularAreaPizza()">Calcular Área</button>
+
+    <div id="resultado">
+        <!-- O resultado será exibido aqui -->
+    </div>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="exercicio13.js"></script>
+
+</body>
+</html>

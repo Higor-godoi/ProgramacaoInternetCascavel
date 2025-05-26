@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Bem-Bão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 150px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #ff9800; /* Cor laranja */
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        #resultado {
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            margin-top: 15px;
+            font-size: 1.2em; /* Resultado um pouco maior */
+            font-weight: bold;
+            min-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora Restaurante Bem-Bão</h1>
+
+    <div>
+        <label for="pesoPrato">Peso do prato (kg):</label>
+        <!-- Input para o peso, permitindo decimais -->
+        <input type="number" id="pesoPrato" value="0" min="0" step="any">
+    </div>
+
+    <!-- Botão que chamará a função JavaScript -->
+    <button onclick="calcularValorPagar()">Calcular Valor a Pagar</button>
+
+    <div id="resultado">
+        <!-- O resultado será exibido aqui -->
+    </div>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="exercicio6.js"></script>
+
+</body>
+</html>

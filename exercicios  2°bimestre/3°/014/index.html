@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachar Conta do Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 150px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #673ab7; /* Cor roxa mais escura */
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        #resultado {
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            margin-top: 15px;
+            font-size: 1.1em;
+            min-height: 4.5em; /* Espaço para as 3 linhas de resultado + título */
+        }
+         #resultado p {
+            margin: 5px 0; /* Espaço entre os parágrafos de resultado */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora para Rachar Conta do Bar</h1>
+
+    <div>
+        <label for="totalConta">Valor total da conta (R$):</label>
+        <!-- Input para o valor total da conta -->
+        <input type="number" id="totalConta" value="0" min="0" step="any">
+    </div>
+
+    <!-- Botão que chamará a função JavaScript -->
+    <button onclick="racharConta()">Calcular Pagamento</button>
+
+    <div id="resultado">
+         <h2>Pagamento por amigo:</h2>
+        <!-- Áreas para exibir os resultados de cada amigo -->
+        <p>Carlos: <strong id="pagamentoCarlosOutput">R$ 0.00</strong></p>
+        <p>André: <strong id="pagamentoAndreOutput">R$ 0.00</strong></p>
+        <p>Felipe: <strong id="pagamentoFelipeOutput">R$ 0.00</strong></p>
+    </div>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="exercicio14.js"></script>
+
+</body>
+</html>
