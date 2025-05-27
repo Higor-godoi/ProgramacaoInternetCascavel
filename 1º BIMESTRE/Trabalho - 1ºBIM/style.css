@@ -1,0 +1,84 @@
+.body{
+    background-color: red;
+    color: white;
+}
+
+.divFixed{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: red;
+    align-items: center;
+    font-family: monospace;
+    font-size: 20px;
+    .img1{
+        float: left;
+        top: 0;
+    }
+    .img2{
+        top: 0;
+        float: right;
+    }
+}
+
+.table1{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 700px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding-top: 80px;
+    background-color: white;
+    color: red;
+    & .fundo{
+        background-color: rgb(229, 223, 223);
+    }
+}
+
+.table2{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 700px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    background-color: white;
+    color: red;
+    & .fundo1{
+        background-color: rgb(229, 223, 223);
+    }
+}
+
+.GP{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-right: 35px;
+    background-color: white;
+    color: red;
+}
+
+.table3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 700px;
+    font-size: 20px;
+    background-color: white;
+    color: red;
+    margin-bottom: 80px;
+}
+
+.pontuação{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 700px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    background-color: white;
+    color: red;
+}

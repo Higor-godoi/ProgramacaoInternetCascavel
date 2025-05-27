@@ -1,0 +1,29 @@
+table{
+    width: 500px;
+}
+.Linha1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    & .p{
+        background-color: rgb(230, 224, 224);
+    }
+    & .time{
+        text-align: left;
+    }
+    & .libertadores{
+        color: #0d5188;
+    }
+    & .Pré-libertadores{
+        color: #66c5e3;
+    }
+    & .Sulamericana{
+        color: orange;
+    }
+    & .Normal{
+        color: gray;
+    }
+    & .rebaixados{
+        color: red;
+    }
+}
