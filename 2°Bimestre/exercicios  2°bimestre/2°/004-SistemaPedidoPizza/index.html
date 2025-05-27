@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido Pizza (Simplificado)</title>
+</head>
+<body>
+    <h1>Faça seu Pedido</h1>
+
+    <h2>Escolha 4 Sabores de Pizza (R$ 12,00 cada sabor):</h2>
+    <label for="sabor1">Sabor 1:</label>
+    <input type="text" id="sabor1" placeholder="Ex: Calabresa">
+    <br><br>
+
+    <label for="sabor2">Sabor 2:</label>
+    <input type="text" id="sabor2" placeholder="Ex: Mussarela">
+    <br><br>
+
+    <label for="sabor3">Sabor 3:</label>
+    <input type="text" id="sabor3" placeholder="Ex: Frango com Catupiry">
+    <br><br>
+
+    <label for="sabor4">Sabor 4:</label>
+    <input type="text" id="sabor4" placeholder="Ex: Portuguesa">
+    <br><br>
+
+    <h2>Refrigerantes (R$ 7,00 cada):</h2>
+    <label for="qtdRefrigerantes">Quantidade:</label>
+    <input type="number" id="qtdRefrigerantes" placeholder="Ex: 2" min="0">
+    <br><br>
+
+    <button id="btnCalcularPedido">Ver Pedido e Total</button>
+
+    <div id="resumoPedido">
+        <p>Seu pedido aparecerá aqui.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
