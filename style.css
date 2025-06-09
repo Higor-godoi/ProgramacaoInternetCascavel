@@ -1,0 +1,145 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    background-color: black; 
+    color: #4a4a4a; 
+    margin: 0;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+header h1 {
+    color: red;
+    font-weight: 600;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.exercicio {
+    background-color: #ffffff;
+    border: 1px solid #e6e6fa; /* Borda lavanda bem sutil */
+    border-radius: 12px; /* Cantos mais arredondados */
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(106, 90, 205, 0.08); /* Sombra mais suave e colorida */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exercicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(106, 90, 205, 0.12);
+}
+
+.exercicio h2 {
+    margin-top: 0;
+    color: #6a5acd; 
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+
+.entrada {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.entrada label {
+    font-weight: 600;
+    font-size: 0.95em;
+    color: #3d3d5c;
+}
+
+.entrada input[type="number"],
+.entrada select {
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entrada input[type="number"]:focus,
+.entrada select:focus {
+    outline: none;
+    border-color: #6a5acd;
+    box-shadow: 0 0 0 3px rgba(106, 90, 205, 0.2);
+}
+
+
+
+button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #594ab8; 
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+.resultado {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1.1em;
+    min-height: 25px;
+    color: #3d3d5c;
+    background-color: #f8f7ff;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 5px solid #6a5acd;
+}
+
+
+.cardapio {
+    margin-bottom: 1.5rem;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+}
+
+.cardapio strong {
+    color: #3d3d5c;
+}
+
+.cardapio ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.cardapio li {
+    padding: 5px 0;
+    color: #555;
+} 

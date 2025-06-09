@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Programação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Trabalho 2º Bimestre</h1>
+    </header>
+
+    <main>
+        <section id="exercicio1" class="exercicio">
+            <h2>1. Encontre o triângulo</h2>
+            <p>Dados três valores X, Y e Z, verifique se eles podem ser os comprimentos dos lados de um triângulo.</p>
+            <div class="entrada">
+                <label for="ladoX">Lado X:</label>
+                <input type="number" id="ladoX" placeholder="Digite o valor de X">
+                
+                <label for="ladoY">Lado Y:</label>
+                <input type="number" id="ladoY" placeholder="Digite o valor de Y">
+
+                <label for="ladoZ">Lado Z:</label>
+                <input type="number" id="ladoZ" placeholder="Digite o valor de Z">
+            </div>
+            <button onclick="verificarTriangulo()">Verificar Triângulo</button>
+            <p id="resultadoTriangulo" class="resultado"></p>
+        </section>
+
+        <section id="exercicio2" class="exercicio">
+            <h2>2. Calculadora de IMC</h2>
+            <p>Insira seu peso e altura para calcular o Índice de Massa Corporal (IMC).</p>
+            <div class="entrada">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" placeholder="Ex: 70.5">
+
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" placeholder="Ex: 1.75">
+            </div>
+            <button onclick="calcularIMC()">Calcular IMC</button>
+            <p id="resultadoIMC" class="resultado"></p>
+        </section>
+
+        <section id="exercicio3" class="exercicio">
+            <h2>3. Calculadora de Impostos de Veículos</h2>
+            <p>Calcule a taxa de transferência de um veículo com base no seu ano e valor de tabela.</p>
+            <div class="entrada">
+                <label for="anoVeiculo">Ano de Fabricação:</label>
+                <input type="number" id="anoVeiculo" placeholder="Ex: 1998">
+
+                <label for="valorVeiculo">Valor de Tabela (R$):</label>
+                <input type="number" id="valorVeiculo" placeholder="Ex: 15000">
+            </div>
+            <button onclick="calcularImposto()">Calcular Imposto</button>
+            <p id="resultadoImposto" class="resultado"></p>
+        </section>
+
+        <section id="exercicio4" class="exercicio">
+            <h2>4. Calculadora de Salário</h2>
+            <p>Insira o salário atual e o código do cargo para calcular o aumento.</p>
+            <div class="entrada">
+                <label for="salarioAtual">Salário Atual (R$):</label>
+                <input type="number" id="salarioAtual" placeholder="Ex: 3000">
+
+                <label for="codigoCargo">Código do Cargo:</label>
+                <input type="number" id="codigoCargo" placeholder="Ex: 101">
+            </div>
+            <button onclick="calcularAumento()">Calcular Aumento</button>
+            <p id="resultadoAumento" class="resultado"></p>
+        </section>
+
+        <section id="exercicio5" class="exercicio">
+            <h2>5. Calculadora de Crédito Bancário</h2>
+            <p>Insira o saldo médio do último ano para calcular o crédito especial.</p>
+            <div class="entrada">
+                <label for="saldoMedio">Saldo Médio (R$):</label>
+                <input type="number" id="saldoMedio" placeholder="Ex: 500">
+            </div>
+            <button onclick="calcularCredito()">Calcular Crédito</button>
+            <p id="resultadoCredito" class="resultado"></p>
+        </section>
+
+        <section id="exercicio6" class="exercicio">
+            <h2>6. Lanchonete</h2>
+            <p>Insira o código do produto e a quantidade para calcular o valor a ser pago.</p>
+            
+            <div class="cardapio">
+                <strong>Cardápio:</strong>
+                <ul>
+                    <li>(100) Cachorro quente - R$ 11,00</li>
+                    <li>(200) Bauru - R$ 8,50</li>
+                    <li>(300) Misto Quente - R$ 8,00</li>
+                    <li>(400) Hamburger - R$ 9,00</li>
+                    <li>(500) Cheeseburger - R$ 10,00</li>
+                    <li>(600) Refrigerante - R$ 4,50</li>
+                </ul>
+            </div>
+
+            <div class="entrada">
+                <label for="codigoProduto">Código do Produto:</label>
+                <input type="number" id="codigoProduto" placeholder="Ex: 100">
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" value="1" min="1">
+            </div>
+            <button onclick="calcularLanche()">Calcular Total</button>
+            <p id="resultadoLanche" class="resultado"></p>
+        </section>
+
+        <section id="exercicio7" class="exercicio">
+            <h2>7. Sistema de Vendas</h2>
+            <p>Calcule o valor a ser pago por um produto com base na condição de pagamento.</p>
+            <div class="entrada">
+                <label for="precoEtiqueta">Preço de Etiqueta (R$):</label>
+                <input type="number" id="precoEtiqueta" placeholder="Ex: 100">
+                <label for="condicaoPagamento">Condição de Pagamento:</label>
+                <select id="condicaoPagamento">
+                    <option value="a">À vista (dinheiro/cheque) - 10% de desconto</option>
+                    <option value="b">À vista (cartão de crédito) - 15% de desconto</option>
+                    <option value="c">Em 2x (preço normal)</option>
+                    <option value="d">Em 3x ou mais (+10% de juros)</option>
+                </select>
+            </div>
+            <button onclick="calcularPagamento()">Calcular Pagamento</button>
+            <p id="resultadoPagamento" class="resultado"></p>
+        </section>
+
+        <section id="exercicio8" class="exercicio">
+            <h2>8. Sistema de Pagamento de Professores</h2>
+            <p>Calcule o salário mensal de um professor com base no seu nível e horas/aula semanais.</p>
+            <div class="entrada">
+                <label for="nivelProfessor">Nível do Professor:</label>
+                <select id="nivelProfessor">
+                    <option value="1">Nível 1 (R$ 12,00/hora)</option>
+                    <option value="2">Nível 2 (R$ 17,00/hora)</option>
+                    <option value="3">Nível 3 (R$ 25,00/hora)</option>
+                </select>
+                <label for="horasAula">Horas/aula semanais:</label>
+                <input type="number" id="horasAula" placeholder="Ex: 20">
+            </div>
+            <button onclick="calcularSalarioProfessor()">Calcular Salário</button>
+            <p id="resultadoSalario" class="resultado"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

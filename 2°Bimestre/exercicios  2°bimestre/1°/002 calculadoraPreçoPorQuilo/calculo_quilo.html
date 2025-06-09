@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pr-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo de Preço por Quilo</title>
-    <!-- <link rel="stylesheet" href="style_quilo.css"> Futuramente, se quisermos estilizar -->
+    <title>Calculadora Preço Por Quilo</title>
 </head>
+
 <body>
+    <header>
+        <h1>Calculadora Preço Por Quilo</h1>
+    </header>
 
-    <h1>Cálculo de Preço por Quilo</h1>
+    <main>
+        <div>
+            <label for="preçoProduto">Preço do Produto:</label>
+            <input type="number" id="preçoProduto" placeholder="digite aqui">
+        </div>
 
-    <div>
-        <label for="valorQuilo">Valor do Quilo (R$):</label>
-        <input type="number" id="valorQuilo" placeholder="Ex: 7.50" step="0.01">
-    </div>
+        <div>
+            <label for="quantidadeQuilos">kg:</label>
+            <input type="number" id="quantidadeQuilos" placeholder="digite aqui">
+        </div>
 
-    <div>
-        <label for="quantidadeQuilos">Quantidade Consumida (kg):</label>
-        <input type="number" id="quantidadeQuilos" placeholder="Ex: 1.5" step="0.01">
-    </div>
+        <button id="CalcularPreço">CalcularPreço</button>
 
-    <button id="calcularPrecoFinal">Calcular Valor Final</button>
+        <p id="resultado"></p>
 
-    <p id="resultadoPrecoFinal"></p>
+    </main>
 
-    <script src="script_quilo.js"></script>
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+    
 </body>
-</html> 
+</html>
